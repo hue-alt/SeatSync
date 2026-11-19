@@ -1,1 +1,2 @@
 # SeatSync
+System Rezerwacji Biletów
