@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>SeatSync — Repertuar</title>
+</head>
+<body>
+<header>
+    <a href="index.html">SeatSync</a>
+    <nav>
+        <ul>
+            <li><a href="#filmy">Filmy</a></li>
+            <li><a href="#koncerty">Koncerty</a></li>
+            <li><a href="#standupy">Stand-up</a></li>
+            <li><a href="#teatr">Teatr</a></li>
+            <li><a href="#kontakt">Kontakt</a></li>
+            <li><a href="login.html">Logowanie</a></li>
+        </ul>
+    </nav>
+</header>
+<main>
+    <section class="introduction">
+        <h1>SeatSync — Zarezerwuj najlepsze miejsca w mieście</h1>
+        <p>Przeglądaj aktualny repertuar kina, koncertów, stand-upów i teatru, sprawdzaj wolne fotele na żywo i rezerwuj bilety w kilka chwil.</p>
+        <div class="type-buttons">
+            <button type="button">Wszystkie</button>
+            <button type="button">Filmy</button>
+            <button type="button">Koncerty</button>
+            <button type="button">Stand-up</button>
+            <button type="button">Teatr</button>
+            <label for="search">Szukaj:</label>
+            <input type="search" id="search" name="search" placeholder="Wpisz tytuł wydarzenia">
+        </div>
+    </section>
+
+    <section class="events-section">
+        <h2>Aktualny repertuar</h2>
+        <div id="events-list">
+            <article class="event-card event-card--active" id="filmy">
+                <div class="event-poster">
+                    <span class="event-badge">Kino</span>
+                    <span class="event-featured">Polecane</span>
+                </div>
+                <h3>Diuna: Część Druga (IMAX)</h3>
+                <p><time datetime="2026-11-28T19:30:00">28.11.2026, 19:30</time></p>
+                <p>Sala IMAX #1</p>
+                <p>od 42 zł</p>
+                <a href="booking.html">Wybierz miejsca</a>
+            </article>
+
+            <article class="event-card" id="koncerty">
+                <div class="event-poster">
+                    <span class="event-badge">Koncert</span>
+                </div>
+                <h3>Linkin Park</h3>
+                <p><time datetime="2026-12-15T20:00:00">15.12.2026, 20:00</time></p>
+                <p>Sala koncertowa #1</p>
+                <p>od 89 zł</p>
+                <a href="booking.html">Wybierz miejsca</a>
+            </article>
+
+            <article class="event-card" id="standupy">
+                <div class="event-poster">
+                    <span class="event-badge">Stand-up</span>
+                </div>
+                <h3>Janusz Kowalski</h3>
+                <p><time datetime="2026-12-20T19:00:00">20.12.2026, 19:00</time></p>
+                <p>Comedy Club #1</p>
+                <p>od 59 zł</p>
+                <a href="booking.html">Wybierz miejsca</a>
+            </article>
+
+            <article class="event-card" id="teatr">
+                <div class="event-poster">
+                    <span class="event-badge">Teatr</span>
+                </div>
+                <h3> Teatr Wielki </h3>
+                <p><time datetime="2026-12-25T18:30:00">25.12.2026, 18:30</time></p>
+                <p>Sala teatralna #1</p>
+                <p>od 79 zł</p>
+                <a href="booking.html">Wybierz miejsca</a>
+            </article>
+        </div>
+    </section>
+</main>
+<footer id="kontakt">
+    <p>2026 SeatSync — Piotr</p>
+    <p>Kontakt: piotr@example.com</p>
+</footer>
+</body>
+</html>
