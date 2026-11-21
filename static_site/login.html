@@ -7,6 +7,69 @@
     <title>SeatSync — Logowanie</title>
 </head>
 <body>
+<header>
+    <a href="index.html">SeatSync</a>
+    <nav>
+        <ul>
+            <li><a href="index.html#filmy">Filmy</a></li>
+            <li><a href="index.html#koncerty">Koncerty</a></li>
+            <li><a href="index.html#standupy">Stand-up</a></li>
+            <li><a href="index.html#teatr">Teatr</a></li>
+            <li><a href="#kontakt">Kontakt</a></li>
+            <li><a href="login.html">Logowanie</a></li>
+        </ul>
+    </nav>
+</header>
 
+<main>
+    <h1>Konto SeatSync</h1>
+    <section class="login-section">
+        <h2>Logowanie</h2>
+        <form>
+            <div>
+                <label for="login-email">Adres e-mail:</label>
+                <input type="email" id="login-email" name="email" required>
+            </div>
+            <div>
+                <label for="login-password">Hasło:</label>
+                <input type="password" id="login-password" name="password" required>
+            </div>
+            <div>
+                <input type="checkbox" id="remember" name="remember">
+                <label for="remember">Zapamiętaj mnie</label>
+            </div>
+            <button type="submit">Zaloguj się</button>
+        </form>
+        <p><a href="#register">Nie masz konta? Zarejestruj się!</a></p>
+    </section>
+
+    <section class="register-section" id="register">
+        <h2>Rejestracja</h2>
+        <form>
+            <div>
+                <label for="register-name">Imię i nazwisko:</label>
+                <input type="text" id="register-name" name="name" required>
+            </div>
+            <div>
+                <label for="register-email">Adres e-mail:</label>
+                <input type="email" id="register-email" name="email" required>
+            </div>
+            <div>
+                <label for="register-password">Hasło:</label>
+                <input type="password" id="register-password" name="password" required>
+            </div>
+            <div>
+                <label for="register-password-repeat">Powtórz hasło:</label>
+                <input type="password" id="register-password-repeat" name="passwordRepeat" required>
+            </div>
+            <button type="submit">Załóż konto</button>
+        </form>
+    </section>
+</main>
+
+<footer id="kontakt">
+    <p>2026 SeatSync — Piotr</p>
+    <p>Kontakt: piotr@example.com</p>
+</footer>
 </body>
 </html>
